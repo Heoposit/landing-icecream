@@ -72,6 +72,10 @@ h6 {
   padding: 0 20px;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 body.locked {
   overflow: hidden;
 }
