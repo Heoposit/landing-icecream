@@ -2,7 +2,7 @@
 
     // Navbar
     nav {
-        background-color: rgba(0, 119, 134, 0.651);
+        background-color: $pinkMainColor;
         overflow: hidden;
     }
     
@@ -10,6 +10,7 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
+        align-items: center;
         padding-top: 15px;
         padding-bottom: 15px;
     }
@@ -25,15 +26,51 @@
     
         // .menu__item
         &__item {
-            margin-left: 25px;
+            margin-left: 40px;
         }
     
         // .menu__item-link
         &__item-link {
-            color: white;
+            color: $blackMainColor;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            -webkit-transition: 0.3s ease;
+            -moz-transition: 0.3s ease;
+            -o-transition: 0.3s ease; 
+
+            &:hover {
+                color: $burgundyColor;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 18px;
+                transition: 0.3s all ease;
+            }
         }
     }
-    
+
+    .button{
+        &__navbar {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    &.active {
+        display: flex;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 3;
+    }
+
+    @media (max-width: $breakpoint768) {
+        display: none;
+    }
+}
     .burger{
         display: none;
         cursor: pointer;
@@ -61,7 +98,7 @@
                 pointer-events: all;
                 justify-content: center;
                 align-items: center;
-                z-index: 22;
+                z-index: 2;
                 animation: fade 0.1s linear;
             }
         }
@@ -72,7 +109,7 @@
             position: relative;
             height: 20px;
             width: 30px;
-            z-index: 102;
+            z-index: 3;
             cursor: pointer;
     
             &.active-burger {

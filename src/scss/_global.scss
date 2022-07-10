@@ -41,3 +41,16 @@ body {
         opacity: 1;
     }
 }
+
+    // Global Styles
+.btn {
+    background: $redColor;
+    color: $whiteColor;
+    padding: 14px 50px;
+    border-radius: 5px;
+
+    &:hover {
+        background: #cf2f65;
+        transition: 0.3s all ease;
+    }
+}

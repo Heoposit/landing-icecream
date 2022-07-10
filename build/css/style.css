@@ -100,8 +100,20 @@ body.locked {
   }
 }
 
+.btn {
+  background: #D64374;
+  color: #FFFFFF;
+  padding: 14px 50px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #cf2f65;
+  transition: 0.3s all ease;
+}
+
 nav {
-  background-color: rgba(0, 119, 134, 0.651);
+  background-color: #F2CEDA;
   overflow: hidden;
 }
 
@@ -109,6 +121,7 @@ nav {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -122,11 +135,42 @@ nav {
 }
 
 .menu__item {
-  margin-left: 25px;
+  margin-left: 40px;
 }
 
 .menu__item-link {
-  color: white;
+  color: #0A0808;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+.menu__item-link:hover {
+  color: #D23166;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  transition: 0.3s all ease;
+}
+
+.button__navbar {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.button.active {
+  display: flex;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
 }
 
 .burger {
@@ -146,7 +190,17 @@ nav {
   }
 }
 
-@media screen and (max-width: 991.98px) {
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 740px;
+  }
+
+  .button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
   .menu {
     position: fixed;
     background: #131418;
@@ -167,7 +221,7 @@ nav {
     pointer-events: all;
     justify-content: center;
     align-items: center;
-    z-index: 22;
+    z-index: 2;
     -webkit-animation: fade 0.1s linear;
             animation: fade 0.1s linear;
   }
@@ -177,7 +231,7 @@ nav {
     position: relative;
     height: 20px;
     width: 30px;
-    z-index: 102;
+    z-index: 3;
     cursor: pointer;
   }
 
@@ -234,12 +288,6 @@ nav {
 
   .menu__item-link {
     color: white;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .container {
-    max-width: 740px;
   }
 }
 
