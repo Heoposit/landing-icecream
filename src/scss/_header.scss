@@ -8,16 +8,14 @@
     
     .navbar {
         display: flex;
-        width: 100%;
+        
         justify-content: space-between;
         align-items: center;
-        padding-top: 15px;
-        padding-bottom: 15px;
     }
     
     .logo {
         a {
-            color: white;
+
         }
     }
     
@@ -27,6 +25,10 @@
         // .menu__item
         &__item {
             margin-left: 40px;
+
+            @media (max-width: $breakpoint992) {
+                margin-left: 16px;
+            }
         }
     
         // .menu__item-link
@@ -44,12 +46,28 @@
                 font-size: 15px;
                 line-height: 18px;
                 transition: 0.3s all ease;
+
+                @media (max-width: $breakpoint992) {
+                    font-size: 13px;  
+                }
+
+                @media (max-width: $breakpoint768) {
+                    font-size: 20px;
+                }
+            }
+
+            @media (max-width: $breakpoint992) {
+                font-size: 12px;  
             }
         }
     }
 
     .button{
+        margin-left: 20px;
 
+        @media (max-width: $breakpoint768) {
+            margin-left: 0px;
+        }
         &.active {
             display: flex;
             position: absolute;
@@ -74,6 +92,15 @@
 
     @media (max-width: $breakpoint768) {
         display: none;
+    }
+    .btn {
+        @media (max-width: $breakpoint1450) {
+            padding: 14px 40px;
+        }
+
+        @media (max-width: $breakpoint992) {
+            padding: 12px 20px;
+        }
     }
 }
     .burger{
@@ -117,6 +144,7 @@
             width: 30px;
             z-index: 3;
             cursor: pointer;
+
     
             &.active-burger {
                 &:before {
@@ -171,7 +199,7 @@
         // .menu__item
         .menu__item {
             padding-right: 30px;
-            margin-top: 20px;
+            margin-top: 25px;
         }
     
         // .menu__link

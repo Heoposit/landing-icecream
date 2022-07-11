@@ -15,10 +15,12 @@
 
     @media (max-width: $breakpoint768) {
         max-width: 740px;
+        padding: 0 60 + px;
     }
 
     @media (max-width: $breakpoint480) {
         max-width: none;
+        padding: 0 30 + px;
     }
 }
 

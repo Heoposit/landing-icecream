@@ -121,15 +121,8 @@ nav {
 
 .navbar {
   display: flex;
-  width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.logo a {
-  color: white;
 }
 
 .menu {
@@ -155,6 +148,10 @@ nav {
   font-size: 15px;
   line-height: 18px;
   transition: 0.3s all ease;
+}
+
+.button {
+  margin-left: 20px;
 }
 
 .button.active {
@@ -184,17 +181,46 @@ nav {
   .container {
     max-width: 1200px;
   }
+
+  .button .btn {
+    padding: 14px 40px;
+  }
 }
 
 @media (max-width: 991.98px) {
   .container {
     max-width: 970px;
   }
+
+  .menu__item {
+    margin-left: 16px;
+  }
+
+  .menu__item-link:hover {
+    font-size: 13px;
+  }
+
+  .menu__item-link {
+    font-size: 12px;
+  }
+
+  .button .btn {
+    padding: 12px 20px;
+  }
 }
 
 @media (max-width: 767.98px) {
   .container {
     max-width: 740px;
+    padding: 0 60px;
+  }
+
+  .menu__item-link:hover {
+    font-size: 20px;
+  }
+
+  .button {
+    margin-left: 0px;
   }
 
   .button__navbar {
@@ -292,7 +318,7 @@ nav {
 
   .menu__item {
     padding-right: 30px;
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
   .menu__item-link {
@@ -304,5 +330,6 @@ nav {
 @media (max-width: 479.98px) {
   .container {
     max-width: none;
+    padding: 0 30px;
   }
 }
