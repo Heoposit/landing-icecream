@@ -36,9 +36,7 @@
             font-weight: 500;
             font-size: 14px;
             line-height: 16px;
-            -webkit-transition: 0.3s ease;
-            -moz-transition: 0.3s ease;
-            -o-transition: 0.3s ease; 
+            transition: 0.3s ease;
 
             &:hover {
                 color: $burgundyColor;
@@ -51,21 +49,28 @@
     }
 
     .button{
+
+        &.active {
+            display: flex;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 3;
+            align-items: center;
+            text-align: center;
+        }
+
         &__navbar {
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
         line-height: 22px;
-    }
-
-    &.active {
-        display: flex;
-        position: absolute;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        z-index: 3;
-    }
+            @media (max-width: $breakpoint768) {
+                border-radius: 0px;
+                width: 100%;
+            }
+        }
 
     @media (max-width: $breakpoint768) {
         display: none;
@@ -81,7 +86,7 @@
         // .menu
         .menu {
             position: fixed;
-            background: #131418;
+            background: $burgerColor;
             left: 0;
             top: 0;
             height: 100vh;
@@ -92,6 +97,7 @@
                 display: flex;
                 left: 0;
                 top: 0;
+                right: 200;
                 height: 100vh;
                 width: 100vw;
                 flex-direction: column;
@@ -164,11 +170,13 @@
     
         // .menu__item
         .menu__item {
-            margin-top: 15px;
+            padding-right: 30px;
+            margin-top: 20px;
         }
     
         // .menu__link
         .menu__item-link {
-            color: white
+            color: white;
+            font-size: 16px;
         }
     }
