@@ -76,6 +76,7 @@ h6 {
 
 body {
   font-family: "Roboto", sans-serif;
+  background: #F2CEDA;
 }
 
 body.locked {
@@ -115,7 +116,6 @@ body.locked {
 }
 
 nav {
-  background-color: #F2CEDA;
   overflow: hidden;
 }
 
@@ -139,6 +139,7 @@ nav {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
+  opacity: 0.6;
   transition: 0.3s ease;
 }
 
@@ -148,6 +149,7 @@ nav {
   font-size: 15px;
   line-height: 18px;
   transition: 0.3s all ease;
+  opacity: 1;
 }
 
 .button {
@@ -175,6 +177,61 @@ nav {
 .burger {
   display: none;
   cursor: pointer;
+}
+
+.section__hero {
+  position: relative;
+}
+
+.hero__item {
+  padding-top: 196px;
+  max-width: 665px;
+}
+
+.hero__tagline {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+}
+
+.hero__title {
+  font-family: "Fredoka One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 57.33px;
+  line-height: 120.5%;
+}
+
+.hero__title span {
+  color: #D23166;
+}
+
+.hero__subtitle {
+  max-width: 523px;
+  margin-top: 35px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  opacity: 0.6;
+}
+
+.hero__btn {
+  margin-top: 50px;
+}
+
+.hero__img-icecream {
+  position: absolute;
+  top: 0;
+  left: 53%;
+}
+
+.hero__img-milk {
+  position: absolute;
+  top: 20%;
+  left: 42%;
 }
 
 @media (max-width: 1449.98px) {

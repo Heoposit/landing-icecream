@@ -27,6 +27,7 @@
     // Body Locked
 body {
     font-family: 'Roboto', sans-serif;
+    background: $pinkMainColor;
     &.locked {
         overflow: hidden;
     }

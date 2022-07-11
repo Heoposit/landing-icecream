@@ -2,21 +2,13 @@
 
     // Navbar
     nav {
-        background-color: $pinkMainColor;
         overflow: hidden;
     }
     
     .navbar {
         display: flex;
-        
         justify-content: space-between;
         align-items: center;
-    }
-    
-    .logo {
-        a {
-
-        }
     }
     
     .menu {
@@ -38,6 +30,7 @@
             font-weight: 500;
             font-size: 14px;
             line-height: 16px;
+            opacity: 0.6;
             transition: 0.3s ease;
 
             &:hover {
@@ -46,6 +39,7 @@
                 font-size: 15px;
                 line-height: 18px;
                 transition: 0.3s all ease;
+                opacity: 1;
 
                 @media (max-width: $breakpoint992) {
                     font-size: 13px;  
