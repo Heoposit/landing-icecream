@@ -1,0 +1,209 @@
+.section {
+
+    // .section__hero
+
+    &__hero {
+        position: relative;
+    }
+}
+
+.hero {
+
+    // .hero__item
+
+    &__item {
+        padding-top: 196px;
+        max-width: 665px;
+
+        @media (max-width: $breakpoint1450) {
+            max-width: 550px;
+            padding-top: 170px;
+        }
+
+        @media (max-width: $breakpoint992) {
+            max-width: 500px;
+            padding-top: 120px;
+        }
+
+        @media (max-width: $breakpoint768) {
+            max-width: 320px;
+            padding-top: 100px;
+        }
+
+        @media (max-width: $breakpoint480) {
+            max-width: 200px;
+            padding-top: 40px;
+        }
+        @media (max-width: 335px) {
+            max-width: 160px;
+        }
+    }
+
+    // .hero__tagline
+
+    &__tagline {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.1em;
+
+        @media (max-width: $breakpoint992) {
+            font-size: 12px;
+        }
+
+        @media (max-width: $breakpoint768) {
+            font-size: 10px;
+        }
+        @media (max-width: $breakpoint480) {
+            font-size: 6px;
+        }
+    }
+
+    // .hero__title
+
+    &__title {
+        font-family: 'Fredoka One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 57.33px;
+        line-height: 120.5%;
+
+        span {
+            color: $burgundyColor;
+        }
+
+        @media (max-width: $breakpoint1450) {
+            font-size: 40px;
+        }
+        
+        @media (max-width: $breakpoint992) {
+            font-size: 32px;
+        }
+
+        @media (max-width: $breakpoint768) {
+            font-size: 20px;
+        }
+        @media (max-width: $breakpoint480) {
+            font-size: 16px;
+        }
+        @media (max-width: 335px) {
+            font-size: 10px;
+        }
+    }
+
+    // .hero__subtitle
+
+    &__subtitle {
+        max-width: 523px;
+        margin-top: 35px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 27px;
+        opacity: 0.6;
+
+        @media (max-width: $breakpoint1450) {
+            max-width: 440px;
+            font-size: 16px;
+        }
+
+        @media (max-width: $breakpoint992) {
+            max-width: 390px;
+            font-size: 12px;
+        }
+
+        @media (max-width: $breakpoint768) {
+            margin-top: 10px;
+            max-width: 260px;
+            font-size: 9px;
+            line-height: 20px;
+        }
+        @media (max-width: $breakpoint480) {
+            font-size: 8px;
+            line-height: 14px;
+            max-width: 160px;
+        }
+        @media (max-width: 335px) {
+            font-size: 6px;
+        }
+    }
+
+    // .hero__btn
+
+    &__btn {
+        margin-top: 50px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+
+        @media (max-width: $breakpoint992) {
+            margin-top: 30px;
+            font-size: 12px;
+        }
+
+        @media (max-width: $breakpoint480) {
+            margin-top: 5px;
+        }
+        @media (max-width: 335px) {
+            font-size: 6px;
+        }
+    }
+    .btn {
+        @media (max-width: $breakpoint992) {
+            padding: 12px 32px;
+        }
+
+        @media (max-width: $breakpoint992) {
+            padding: 10px 26px;
+        }
+        @media (max-width: $breakpoint480) {
+            padding: 4px 20px;
+        }
+    }
+}
+
+.hero__img {
+
+    &-icecream {
+        position: absolute;
+        top: 5%;
+        left: 54%;
+        
+        @media (max-width: $breakpoint1450) {
+            width: 490px;
+            height: 490px;
+        }
+
+        @media (max-width: $breakpoint992) {
+            width: 340px;
+            height: 340px;
+            left: 55%;
+            top: 10%;
+        }
+
+        @media (max-width: $breakpoint768) {
+            width: 240px;
+            height: 240px;
+            left: 55%;
+            top: 15%;
+        }
+
+        @media (max-width: $breakpoint480) {
+            width: 150px;
+            height: 150px;
+            left: 60%;
+        }
+        @media (max-width: 375px) {
+            width: 150px;
+            height: 150px;
+            left: 55%;
+        }
+        @media (max-width: 335px) {
+            width: 150px;
+            height: 150px;
+            left: 48%;
+        }
+    }
+}
