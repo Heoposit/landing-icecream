@@ -1,29 +1,62 @@
 .section__delivery {
+    display: grid;
+    width: 100%;
+    justify-content: center;
     margin-top: 100px;
     background: $whiteColor;
     width: auto;
 }
 
 .delivery {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 39px;
+    display: grid;
+    grid-template-columns:250px 250px 250px 250px;
+    grid-gap: 39px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    @media (max-width: $breakpoint1450) {
+        grid-template-columns: 150px 150px 150px 150px;
+    }
+
+    @media (max-width: $breakpoint992) {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+    }
+    
 
     // .delivery__frame
     &__frame {
-        margin: 100px 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 250px;
+        max-width: 250px;
         height: 200px;
         border: 1px solid rgba(0, 0, 0, 0.03);
         border-radius: 7px;
         box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.03);
+
         @media (max-width: $breakpoint1450) {
-            width: 220px;
+            max-width: 250px;
             height: 180px;
+        }
+
+        @media (max-width: $breakpoint992) {
+            width: 250px;
+            height: 180px;
+        }
+        @media (max-width: $breakpoint768) {
+            max-width: 150px;
+            height: 140px;
+        }
+        @media (max-width: $breakpoint480) {
+            max-width: 100px;
+            height: auto;
         }
     }
 
@@ -35,6 +68,11 @@
         margin-top: 35px;
         @media (max-width: $breakpoint1450) {
             margin-top: 20px;
+        }
+
+        @media (max-width: $breakpoint992) {
+            width: 30px;
+            height: 30px;
         }
     }
 
@@ -50,6 +88,23 @@
         @media (max-width: $breakpoint1450) {
             font-size: 16px;
             line-height: 24px;
+        }
+
+        @media (max-width: $breakpoint992) {
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        @media (max-width: $breakpoint768) {
+            margin-top: 20px;
+            font-size: 8px;
+            line-height: 16px;
+        }
+
+        @media (max-width: $breakpoint480) {
+            margin-top: 10px;
+            font-size: 8px;
+            line-height: 16px;
         }
     }
 
@@ -67,6 +122,25 @@
         @media (max-width: $breakpoint1450) {
             font-size: 10px;
             line-height: 15px;
+        }
+
+        @media (max-width: $breakpoint992) {
+            font-size: 9px;
+            line-height: 12px;
+            padding: 0px 12px;
+        }
+
+        @media (max-width: $breakpoint768) {
+            font-size: 6px;
+            line-height: 10px;
+            padding: 0px 14px;
+        }
+
+        @media (max-width: $breakpoint480) {
+            margin-top: 3px;
+            font-size: 6px;
+            line-height: 10px;
+            padding: 0px 14px;
         }
     }   
 }

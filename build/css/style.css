@@ -231,24 +231,27 @@ nav {
 }
 
 .section__delivery {
+  display: grid;
+  width: 100%;
+  justify-content: center;
   margin-top: 100px;
   background: #FFFFFF;
   width: auto;
 }
 
 .delivery {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 39px;
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-gap: 39px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .delivery__frame {
-  margin: 100px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 250px;
+  max-width: 250px;
   height: 200px;
   border: 1px solid rgba(0, 0, 0, 0.03);
   border-radius: 7px;
@@ -309,8 +312,12 @@ nav {
     height: 490px;
   }
 
+  .delivery {
+    grid-template-columns: 150px 150px 150px 150px;
+  }
+
   .delivery__frame {
-    width: 220px;
+    max-width: 250px;
     height: 180px;
   }
 
@@ -387,6 +394,33 @@ nav {
     left: 55%;
     top: 10%;
   }
+
+  .delivery {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+  }
+
+  .delivery__frame {
+    width: 250px;
+    height: 180px;
+  }
+
+  .delivery__frame-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .delivery__frame-title {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .delivery__frame-text {
+    font-size: 9px;
+    line-height: 12px;
+    padding: 0px 12px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -439,8 +473,25 @@ nav {
   .hero__img-icecream {
     width: 240px;
     height: 240px;
-    left: 55%;
+    left: 50.5%;
     top: 15%;
+  }
+
+  .delivery__frame {
+    max-width: 150px;
+    height: 140px;
+  }
+
+  .delivery__frame-title {
+    margin-top: 20px;
+    font-size: 8px;
+    line-height: 16px;
+  }
+
+  .delivery__frame-text {
+    font-size: 6px;
+    line-height: 10px;
+    padding: 0px 14px;
   }
 }
 
@@ -590,6 +641,29 @@ nav {
     width: 150px;
     height: 150px;
     left: 60%;
+  }
+
+  .delivery {
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+  }
+
+  .delivery__frame {
+    max-width: 100px;
+    height: auto;
+  }
+
+  .delivery__frame-title {
+    margin-top: 10px;
+    font-size: 8px;
+    line-height: 16px;
+  }
+
+  .delivery__frame-text {
+    margin-top: 3px;
+    font-size: 6px;
+    line-height: 10px;
+    padding: 0px 14px;
   }
 }
 
