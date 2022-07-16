@@ -1,0 +1,130 @@
+.section__products {
+    width: 100%;
+    background: $whiteColor;
+}
+
+.header {
+    padding-top: 137px;
+
+    @media (max-width: $breakpoint992) {
+            padding-top: 115px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        padding-top: 40px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        padding-top: 20px;
+    } 
+
+    // .header__title
+
+    &__title {
+        text-align: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 44.2px;
+        line-height: 61px;
+        
+        @media (max-width: $breakpoint1450) {
+            font-size: 39px;
+        }
+
+        @media (max-width: $breakpoint768) {
+            font-size: 23px;
+        }
+
+        @media (max-width: $breakpoint480) {
+            font-size: 20px;
+        } 
+
+        @media (max-width: 335px) {
+            font-size: 15px;
+            line-height: 30px;
+        } 
+
+    }
+}
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 65px;
+    margin-bottom: 100px;
+
+    @media (max-width: $breakpoint1450) {
+        margin-top: 50px;
+    }   
+    
+    @media (max-width: $breakpoint768) {
+        margin-top: 10px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        margin-top: 8px;
+    } 
+
+    @media (max-width: 335px) {
+        margin-top: 0px;
+    } 
+
+
+    // .header__menu-item-link
+
+    &-item-link {
+        position: relative;
+        color: $blackColor;
+        opacity: 0.6;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+
+        @media (max-width: $breakpoint1450) {
+            font-size: 16px;
+        }
+
+        @media (max-width: $breakpoint992) {
+            font-size: 12px;
+        } 
+
+        @media (max-width: $breakpoint768) {
+            font-size: 8px;
+        }     
+        
+        @media (max-width: $breakpoint480) {
+            font-size: 6px;
+        } 
+
+        @media (max-width: 335px) {
+            font-size: 5px;
+        } 
+
+
+        &:hover {
+            opacity: 1;
+            transition: 0.3 all ease;
+        }
+
+        &:after {
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 3px; 
+            background-color: $redColor; 
+            content: "";
+            transition:0.3s all ease-out;
+
+            @media (max-width: $breakpoint768) {
+                height: 2px;
+            }
+        }
+        
+        &:hover:after,
+        &:focus:after {
+            width: 100%;
+        }
+    }
+}
+
