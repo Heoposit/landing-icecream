@@ -1,11 +1,11 @@
 .section__about {
+    display: flex;
     width: 100%;
 }
 
 .about {
     display: flex;
     justify-content: space-between;
-
 }
 
 .about__item{
@@ -16,11 +16,11 @@
     }
 
     @media (max-width: $breakpoint768) {
-        margin-top: 80px;
+        margin-top: 22px;
     }
 
     @media (max-width: $breakpoint480) {
-        margin-top: 50px;
+        margin-top: 10px;
     }
     
     // .about__item-title
@@ -43,7 +43,7 @@
 
         @media (max-width: $breakpoint768) {
             font-size: 20.7px;
-            line-height: 30px;
+            line-height: 20px;
         }
 
         @media (max-width: $breakpoint480) {
@@ -83,6 +83,7 @@
         @media (max-width: $breakpoint480) {
             font-size: 6px;
             margin-top: 6px;
+            line-height: 9px;
         }
 
         @media (max-width: 335px) {
