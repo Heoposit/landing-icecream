@@ -103,7 +103,7 @@
 
         &:hover {
             opacity: 1;
-            transition: 0.3 all ease;
+            transition: .3s all ease;
         }
 
         &:after {
@@ -128,3 +128,55 @@
     }
 }
 
+.body {
+    display: flex;
+    width: 100%;
+}
+
+.product1 {
+
+		// .product1__img
+
+		&__img {
+		}
+
+		// .product1__item
+
+		&__item {
+		}
+}
+.product {
+
+		// .product__item-title
+
+		&__item-title {
+		}
+
+		// .product__item-text
+
+		&__item-text {
+		}
+
+		// .product__item-sale
+
+		&__item-sale {
+		}
+
+		// .product__item-btn
+
+		&__item-btn {
+		}
+}
+
+.product2 {
+
+		// .product2__item
+
+		&__item {
+		}
+
+		// .product2__img
+
+		&__img {
+		}
+}

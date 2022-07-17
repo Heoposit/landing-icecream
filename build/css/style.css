@@ -370,7 +370,7 @@ nav {
 
 .header__menu-item-link:hover {
   opacity: 1;
-  transition: 0.3 all ease;
+  transition: 0.3s all ease;
 }
 
 .header__menu-item-link:after {
@@ -386,6 +386,11 @@ nav {
 
 .header__menu-item-link:hover:after,
 .header__menu-item-link:focus:after {
+  width: 100%;
+}
+
+.body {
+  display: flex;
   width: 100%;
 }
 
