@@ -50,7 +50,6 @@
     display: flex;
     justify-content: space-between;
     margin-top: 65px;
-    margin-bottom: 100px;
 
     @media (max-width: $breakpoint1450) {
         margin-top: 50px;
@@ -133,6 +132,14 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+
+    @media (max-width: $breakpoint992) {
+        margin-top: 70px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        margin-top: 60px;
+    }
 }
 
 .product {
@@ -144,6 +151,29 @@
             font-weight: 700;
             font-size: 26px;
             line-height: 36px;
+            
+            @media (max-width: $breakpoint1450) {
+                font-size: 23px;
+            }
+
+            @media (max-width: $breakpoint992) {
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            @media (max-width: $breakpoint768) {
+                font-size: 12px;
+                line-height: 18px;
+            }
+
+            @media (max-width: 580px) {
+                font-size: 10px;
+                line-height: 16px;
+            }
+
+            @media (max-width: $breakpoint480) {
+                font-size: 8px;
+            }
 		}
 
 		// .product__item-text
@@ -155,6 +185,36 @@
             font-size: 16px;
             line-height: 24px;
             opacity: 0.7;
+
+            @media (max-width: $breakpoint1450) {
+                font-size: 12px;
+                line-height: 22px;
+            }
+
+            @media (max-width: $breakpoint992) {
+                font-size: 9px;
+                line-height: 15px;
+            }
+
+            @media (max-width: $breakpoint768) {
+                font-size: 7px;
+                line-height: 15px;
+            }
+
+            @media (max-width: 580px) {
+                font-size: 7px;
+                line-height: 15px;
+            }
+
+            @media (max-width: $breakpoint480) {
+                font-size: 5.5px;
+                margin-top: 7px;
+            }
+            
+            @media (max-width: 355px) {
+                font-size: 4.5px;
+                line-height: 7px;
+            }
 		}
 
 		// .product__item-sale
@@ -166,6 +226,31 @@
             font-size: 26px;
             line-height: 36px;
 
+            @media (max-width: $breakpoint1450) {
+                font-size: 23px;
+                margin-top: 18px;
+            }
+
+            @media (max-width: $breakpoint992) {
+                font-size: 15px;
+                line-height: 16px;
+            }
+
+            @media (max-width: $breakpoint768) {
+               font-size: 12px;
+               margin-top: 14px;
+            }
+
+            @media (max-width: 580px) {
+                font-size: 9px;
+                margin-top: 6px;
+            }
+            
+            @media (max-width: $breakpoint480) {
+                font-size: 7px;
+                line-height: 3px;
+            }
+
             span {
                 text-decoration: line-through;
                 font-style: normal;
@@ -173,6 +258,25 @@
                 font-size: 20px;
                 line-height: 28px;
                 opacity: 0.7;
+
+                @media (max-width: $breakpoint992) {
+                    font-size: 12px;
+                    line-height: 14px;
+                }
+
+                @media (max-width: $breakpoint768) {
+                    font-size: 10px;
+                    line-height: 10px;
+                }
+
+                @media (max-width: 580px) {
+                    font-size: 7px;
+                }
+
+                @media (max-width: $breakpoint480) {
+                    font-size: 5.5px;
+                    line-height: 6px;
+                }
             }
 		}
 
@@ -185,14 +289,71 @@
             font-weight: 500;
             font-size: 16px;
             line-height: 19px;
+
+            @media (max-width: $breakpoint1450) {
+                font-size: 13px;
+            }
+
+            @media (max-width: $breakpoint992) {
+                font-size: 11px;
+            }
+
+            @media (max-width: $breakpoint768) {
+                font-size: 9px;
+            }
+
+            @media (max-width: 580px) {
+                font-size: 7px;
+                margin-top: 5px;
+            }
+
+            @media (max-width: 355px) {
+                font-size: 5px;
+            }
 		}
 
         // .product__img
 
         &__img {
-            width: 580px;
-            height: 415px;
-            margin-bottom: 120px;
+
+            img {
+                width: 580px;
+                height: 415px;
+                margin-top: 30px;
+
+                @media (max-width: $breakpoint1450) {
+                    width: 470px;
+                    height: 305px;   
+                    margin-top: 30px;
+                }
+
+                @media (max-width: $breakpoint992) {
+                    width: 320px;
+                    height: 215px;   
+                }
+                
+                @media (max-width: $breakpoint768) {
+                    width: 240px;
+                    height: 150px;   
+                }
+
+                @media (max-width: 580px) {
+                    width: 200px;
+                }
+                
+                @media (max-width: $breakpoint480) {
+                    width: 175px;
+                }
+
+                @media (max-width: 355px) {
+                    width: 155px;
+                    margin-top: 0;
+                }
+
+                @media (max-width: 310px) {
+                    width: 130px;
+                }
+            }
         }
 }
 
@@ -203,17 +364,62 @@
 
     &__item {
         margin-left: 85px;  
-        margin-top: 60px;
+        margin-top: 120px;
+
+        @media (max-width: $breakpoint1450) {
+            margin-top: 30px;       
+        }
+
+        @media (max-width: $breakpoint992) {
+            margin-top: 30px;
+            margin-left: 50px;     
+        }
+        
     }
+}
+
+.product1:last-child {
+    margin-top: 50px;
 }
 
 .product2 {
     display: flex;
-
+    margin-top: 50px;
 		// .product2__item
 
 		&__item {
             margin-right: 85px;  
             margin-top: 100px;
+
+            @media (max-width: $breakpoint1450) {
+                margin-top: 60px;       
+            }
+
+            @media (max-width: $breakpoint992) {
+                margin-top: 30px;
+                margin-right: 40px;    
+            }
 		}
+}
+
+.btn {
+    @media (max-width: $breakpoint1450) {
+     padding: 12px 40px;           
+    }
+
+    @media (max-width: $breakpoint992) {
+        padding: 9px 36px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        padding: 6px 20px;
+    }
+
+    @media (max-width: 580px) {
+        padding: 4px 16px;
+    }
+
+    @media (max-width: 355px) {
+        padding: 0px 10px;
+    }
 }
