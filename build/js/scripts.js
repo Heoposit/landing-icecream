@@ -28,4 +28,4 @@
             }    
         })
     }
-    burgerMenu()
+    burgerMenu();;
