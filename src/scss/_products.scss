@@ -140,6 +140,14 @@
     @media (max-width: $breakpoint768) {
         margin-top: 60px;
     }
+
+    @media (max-width: $breakpoint480) {
+        margin-top: 35px;
+    }
+
+    @media (max-width: 335px) {
+        margin-top: 30px;
+    }
 }
 
 .product {
@@ -199,6 +207,7 @@
             @media (max-width: $breakpoint768) {
                 font-size: 7px;
                 line-height: 15px;
+                margin-top: 7px;
             }
 
             @media (max-width: 580px) {
@@ -209,11 +218,17 @@
             @media (max-width: $breakpoint480) {
                 font-size: 5.5px;
                 margin-top: 7px;
+                line-height: 12px;
             }
             
             @media (max-width: 355px) {
                 font-size: 4.5px;
                 line-height: 7px;
+            }
+
+            @media (max-width: 335px) {
+                margin-top: 2px;
+                font-size: 3.5;
             }
 		}
 
@@ -251,6 +266,11 @@
                 line-height: 3px;
             }
 
+            @media (max-width: 335px) {
+                font-size: 5px;
+                margin-top: 3px;
+            }
+
             span {
                 text-decoration: line-through;
                 font-style: normal;
@@ -277,6 +297,10 @@
                     font-size: 5.5px;
                     line-height: 6px;
                 }
+
+                @media (max-width: 335px) {
+                    font-size: 4px;
+                }
             }
 		}
 
@@ -300,6 +324,7 @@
 
             @media (max-width: $breakpoint768) {
                 font-size: 9px;
+                line-height: 10px;
             }
 
             @media (max-width: 580px) {
@@ -309,8 +334,14 @@
 
             @media (max-width: 355px) {
                 font-size: 5px;
+                line-height: 10px;
             }
-		}
+
+            @media (max-width: 335px) {
+                font-size: 3px;
+                line-height: 5px;
+            }
+        }
 
         // .product__img
 
@@ -347,11 +378,13 @@
 
                 @media (max-width: 355px) {
                     width: 155px;
+                    height: 110px;
                     margin-top: 0;
                 }
 
                 @media (max-width: 310px) {
                     width: 130px;
+                    height: 100px;
                 }
             }
         }
@@ -375,6 +408,9 @@
             margin-left: 50px;     
         }
         
+        @media (max-width: 355px) {
+            margin-top: 5px;
+        }
     }
 }
 
@@ -399,6 +435,10 @@
                 margin-top: 30px;
                 margin-right: 40px;    
             }
+
+            @media (max-width: 355px) {
+                margin-top: 5px;
+            }
 		}
 }
 
@@ -415,11 +455,7 @@
         padding: 6px 20px;
     }
 
-    @media (max-width: 580px) {
-        padding: 4px 16px;
-    }
-
-    @media (max-width: 355px) {
-        padding: 0px 10px;
+    @media (max-width: $breakpoint480) {
+        padding: 2px 8px;
     }
 }
