@@ -556,6 +556,7 @@ nav {
 .section__help {
   width: 100%;
   background: #FFFFFF;
+  padding-bottom: 150px;
 }
 
 .help {
@@ -596,6 +597,142 @@ nav {
 
 .help .btn {
   padding: 28px 46px;
+}
+
+.section__footer {
+  width: 100%;
+  background: #000000;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 200px 450px 400px 400px;
+}
+
+.company {
+  margin-top: 70px;
+}
+
+.company__joke {
+  margin-top: 9px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
+.company__follow-title {
+  margin-top: 25px;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.company__follow-network {
+  margin-top: 8px;
+  display: flex;
+  gap: 10px;
+}
+
+.company__follow-network img {
+  width: 12px;
+  height: 12px;
+}
+
+.footer__links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer__menu {
+  margin-left: 37px;
+  margin-top: 143px;
+  margin-bottom: 70px;
+}
+
+.footer__menu__item {
+  padding-bottom: 10px;
+}
+
+.footer__menu__item-link {
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  opacity: 0.7;
+}
+
+.footer__menu__item-link:hover {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  opacity: 1;
+  transition: 0.3s all ease;
+}
+
+.newsletter {
+  margin-left: 150px;
+  margin-top: 136px;
+}
+
+.newsletter__title {
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.newsletter__input {
+  padding: 14px 16px;
+  width: 180px;
+  background: #000000;
+  border: 1px solid #D23166;
+  border-radius: 5px 0px 0px 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0.6;
+  color: #FFFFFF;
+}
+
+.newsletter__label {
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.newsletter__company {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.newsletter__block {
+  display: flex;
+  margin-top: 13px;
+}
+
+.newsletter img {
+  width: 20px;
+  height: 15px;
+}
+
+.btn {
+  padding: 18px 16px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.btn:hover {
+  transition: 0.1s all ease;
 }
 
 @media (max-width: 1449.98px) {
@@ -756,6 +893,34 @@ nav {
 
   .help .btn {
     padding: 26px 44px;
+  }
+
+  .footer {
+    grid-template-columns: 200px 380px 1fr;
+  }
+
+  .footer__links {
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .footer__menu__item-link {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .newsletter {
+    margin-left: 0px;
+  }
+
+  .newsletter__input {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 12px 14px;
+    width: 160px;
+  }
+
+  .btn {
+    padding: 14px 10px;
   }
 }
 
@@ -979,6 +1144,55 @@ nav {
   .help .btn {
     padding: 20px 36px;
   }
+
+  .footer {
+    grid-template-columns: 3fr 5fr 3fr;
+  }
+
+  .company__joke {
+    font-size: 8px;
+    line-height: 12px;
+  }
+
+  .footer__links {
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .footer__menu__item {
+    padding-bottom: 8px;
+  }
+
+  .footer__menu__item-link:hover {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .footer__menu__item-link {
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .newsletter__title {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .newsletter__input {
+    font-size: 10px;
+    line-height: 12px;
+    height: 40px;
+    padding: 10px 12px;
+    width: 120px;
+  }
+
+  .newsletter__label {
+    font-size: 12px;
+    height: 40px;
+  }
+
+  .btn {
+    padding: 10px 8px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -1199,6 +1413,71 @@ nav {
   .help .btn {
     padding: 18px 28px;
   }
+
+  .company img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .company__joke {
+    font-size: 7px;
+  }
+
+  .company__follow-title {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 15px;
+  }
+
+  .company__follow-network img {
+    width: 12px;
+    height: 12px;
+  }
+
+  .footer__links {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .footer__menu {
+    margin-top: 120px;
+  }
+
+  .footer__menu__item {
+    padding-bottom: 4px;
+  }
+
+  .footer__menu__item-link:hover {
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .footer__menu__item-link {
+    font-size: 6px;
+    line-height: 10px;
+  }
+
+  .newsletter__title {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .newsletter__input {
+    font-size: 8px;
+    line-height: 10px;
+    height: 35px;
+    width: 100px;
+    padding: 8px 10px;
+  }
+
+  .newsletter__label {
+    height: 35px;
+    font-size: 10px;
+    width: 70px;
+  }
+
+  .btn {
+    padding: 6px 8px;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -1302,6 +1581,47 @@ nav {
 @media screen and (max-width: 767.98px) and (max-width: 479.98px) {
   .menu__item-link {
     font-size: 13px;
+  }
+}
+
+@media (max-width: 585px) {
+  .footer {
+    grid-template-columns: 1fr 5fr 1fr;
+  }
+
+  .footer__links {
+    grid-template-columns: 0.1fr 2fr;
+  }
+
+  .footer__menu__item-link {
+    font-size: 5px;
+    line-height: 8px;
+  }
+
+  .newsletter__title {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .newsletter__input {
+    width: 70px;
+    height: 30px;
+  }
+
+  .newsletter__label {
+    width: 40px;
+    font-size: 8px;
+    height: 30px;
+    font-size: 6px;
+  }
+
+  .newsletter img {
+    width: 15px;
+    height: 10px;
+  }
+
+  .btn {
+    padding: 6px 6px;
   }
 }
 
@@ -1552,6 +1872,62 @@ nav {
 
   .help .btn {
     padding: 14px 22px;
+  }
+
+  .company {
+    margin-top: 20px;
+  }
+
+  .company__follow-network img {
+    width: 8px;
+    height: 8px;
+  }
+
+  .company__follow-network {
+    margin-top: 6px;
+  }
+
+  .footer__menu {
+    margin-top: 70px;
+  }
+
+  .footer__menu__item {
+    padding-bottom: 1px;
+  }
+
+  .newsletter {
+    margin-top: 70px;
+  }
+
+  .btn {
+    padding: 6px 6px;
+  }
+}
+
+@media (max-width: 395px) {
+  .newsletter__input {
+    height: 25px;
+  }
+
+  .newsletter__label {
+    height: 25px;
+  }
+
+  .newsletter__company {
+    margin-top: 10px;
+  }
+
+  .newsletter__block {
+    margin-top: 10px;
+  }
+
+  .newsletter img {
+    width: 12px;
+    height: 7px;
+  }
+
+  .btn {
+    padding: 2px 4px;
   }
 }
 
