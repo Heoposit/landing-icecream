@@ -211,7 +211,7 @@
     
         // .menu__link
         .menu__item-link {
-            color: white;
+            color: $blackMainColor;
             font-size: 16px;
             @media (max-width: $breakpoint480) {
                 font-size: 13px;  

@@ -74,7 +74,7 @@ h6 {
 
 body {
   font-family: "Roboto", sans-serif;
-  background: #F2CEDA;
+  background: #F8EDF0;
 }
 
 body.locked {
@@ -111,6 +111,12 @@ body.locked {
 .btn:hover {
   background: #cf2f65;
   transition: 0.3s all ease;
+}
+
+.back {
+  background: #FFFFFF;
+  border-radius: 3px;
+  padding: 6px 10px;
 }
 
 nav {
@@ -467,6 +473,86 @@ nav {
   margin-top: 100px;
 }
 
+.section__download {
+  width: 100%;
+  display: flex;
+  max-height: 678px;
+}
+
+.download {
+  display: flex;
+}
+
+.download__image img {
+  margin-top: 60px;
+}
+
+.download__item {
+  margin-top: 90px;
+  margin-left: 70px;
+}
+
+.download__item-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44.2px;
+  line-height: 52px;
+}
+
+.download__item-text {
+  margin-top: 20px;
+  max-width: 607px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  opacity: 0.7;
+}
+
+.instruction {
+  margin-top: 30px;
+}
+
+.instruction__item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.instruction__item-image {
+  margin-top: 5px;
+}
+
+.instruction__item-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  margin-top: 6px;
+}
+
+.links {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.links__google {
+  margin-right: 5px;
+}
+
+.links__google img {
+  width: 200px;
+  height: 77px;
+}
+
+.links__apple img {
+  width: 173px;
+  height: 88px;
+}
+
 @media (max-width: 1449.98px) {
   .container {
     max-width: 1200px;
@@ -578,6 +664,40 @@ nav {
 
   .btn {
     padding: 12px 40px;
+  }
+
+  .download__image img {
+    width: 280px;
+  }
+
+  .download__item-title {
+    font-size: 30px;
+    line-height: 33px;
+  }
+
+  .download__item-text {
+    max-width: 460px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .instruction__item-text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .links__google img {
+    width: 170px;
+    height: 69px;
+  }
+
+  .links__apple img {
+    width: 155px;
+    height: 77px;
+  }
+
+  .back {
+    padding: 4px 6px;
   }
 }
 
@@ -748,6 +868,45 @@ nav {
   .btn {
     padding: 9px 36px;
   }
+
+  .download__image img {
+    width: 240px;
+  }
+
+  .download__item-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .download__item-text {
+    max-width: 440px;
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .instruction {
+    margin-top: 20px;
+  }
+
+  .instruction__item-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .links {
+    margin-top: 15px;
+  }
+
+  .links__google img {
+    width: 140px;
+    height: 57px;
+  }
+
+  .links__apple img {
+    width: 140px;
+    height: 66px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -908,12 +1067,54 @@ nav {
   .btn {
     padding: 6px 20px;
   }
+
+  .download__image img {
+    width: 180px;
+  }
+
+  .download__item {
+    margin-left: 50px;
+  }
+
+  .download__item-title {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .download__item-text {
+    max-width: 220px;
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .instruction {
+    margin-top: 10px;
+  }
+
+  .instruction__item-text {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .links {
+    margin-top: 8px;
+  }
+
+  .links__google img {
+    width: 80px;
+    height: 39px;
+  }
+
+  .links__apple img {
+    width: 80px;
+    height: 43px;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
   .menu {
     position: fixed;
-    background: #F2CEDA;
+    background: #F8EDF0;
     left: 0;
     top: 0;
     height: 100vh;
@@ -999,7 +1200,7 @@ nav {
   }
 
   .menu__item-link {
-    color: white;
+    color: #0A0808;
     font-size: 16px;
   }
 
@@ -1187,6 +1388,61 @@ nav {
   .btn {
     padding: 2px 8px;
   }
+
+  .download {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .download__image img {
+    width: 125px;
+  }
+
+  .download__item {
+    margin-left: 20px;
+  }
+
+  .download__item-title {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .download__item-text {
+    max-width: 180px;
+    font-size: 8px;
+    line-height: 12px;
+    margin-top: 10px;
+  }
+
+  .instruction__item {
+    gap: 4px;
+  }
+
+  .instruction__item-image {
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
+  }
+
+  .instruction__item-text {
+    font-size: 8px;
+    line-height: 12px;
+    margin-top: 2px;
+  }
+
+  .links__google img {
+    width: 60px;
+    height: 30px;
+  }
+
+  .links__apple img {
+    width: 60px;
+    height: 33px;
+  }
+
+  .back {
+    padding: 2px 4px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1300,6 +1556,43 @@ nav {
   .product__item-btn {
     font-size: 3px;
     line-height: 5px;
+  }
+
+  .download__image img {
+    width: 100px;
+  }
+
+  .download__item-title {
+    font-size: 8px;
+  }
+
+  .download__item-text {
+    font-size: 6px;
+    max-width: 120px;
+    line-height: 10px;
+    margin-top: 8px;
+  }
+
+  .instruction {
+    margin-top: 4px;
+  }
+
+  .instruction__item-text {
+    font-size: 6px;
+  }
+
+  .links {
+    margin-top: 4px;
+  }
+
+  .links__google img {
+    width: 40px;
+    height: 20px;
+  }
+
+  .links__apple img {
+    width: 40px;
+    height: 20px;
   }
 }
 
