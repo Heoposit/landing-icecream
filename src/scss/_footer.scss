@@ -347,10 +347,9 @@
     }
 
 .btn {
-    padding: 18px 16px;
-    border-radius: 0px 5px 5px 0px;
+    
     &:hover {
-        transition: .1s all ease;
+        transition: .2s all ease;
     }
 
     @media (max-width: $breakpoint1450) {

@@ -726,13 +726,8 @@ nav {
   height: 15px;
 }
 
-.btn {
-  padding: 18px 16px;
-  border-radius: 0px 5px 5px 0px;
-}
-
 .btn:hover {
-  transition: 0.1s all ease;
+  transition: 0.2s all ease;
 }
 
 @media (max-width: 1449.98px) {
