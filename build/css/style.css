@@ -484,7 +484,7 @@ nav {
 }
 
 .download__image img {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .download__item {
@@ -551,6 +551,51 @@ nav {
 .links__apple img {
   width: 173px;
   height: 88px;
+}
+
+.section__help {
+  width: 100%;
+  background: #FFFFFF;
+}
+
+.help {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.help__title {
+  margin-top: 191px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.help__input-area {
+  margin-top: 30px;
+  width: 503px;
+  background: #FAFAFA;
+  outline: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 29px 30px;
+  border-radius: 5px;
+}
+
+.help__input-btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.help .btn {
+  padding: 28px 46px;
 }
 
 @media (max-width: 1449.98px) {
@@ -698,6 +743,19 @@ nav {
 
   .back {
     padding: 4px 6px;
+  }
+
+  .help__title {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .help__input-area {
+    padding: 26px 44px;
+  }
+
+  .help .btn {
+    padding: 26px 44px;
   }
 }
 
@@ -907,6 +965,20 @@ nav {
     width: 140px;
     height: 66px;
   }
+
+  .help__title {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .help__input-area {
+    padding: 23px 40px;
+    width: 395px;
+  }
+
+  .help .btn {
+    padding: 20px 36px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -1108,6 +1180,24 @@ nav {
   .links__apple img {
     width: 80px;
     height: 43px;
+  }
+
+  .help__title {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .help__input-area {
+    width: 260px;
+    padding: 20px 36px;
+  }
+
+  .help__input-btn {
+    font-size: 16px;
+  }
+
+  .help .btn {
+    padding: 18px 28px;
   }
 }
 
@@ -1443,6 +1533,26 @@ nav {
   .back {
     padding: 2px 4px;
   }
+
+  .help__title {
+    font-size: 18px;
+    line-height: 34px;
+    margin-top: 100px;
+  }
+
+  .help__input-area {
+    padding: 12px 22px;
+    width: 200px;
+    font-size: 10px;
+  }
+
+  .help__input-btn {
+    font-size: 12px;
+  }
+
+  .help .btn {
+    padding: 14px 22px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1593,6 +1703,20 @@ nav {
   .links__apple img {
     width: 40px;
     height: 20px;
+  }
+
+  .help__title {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  .help__input-area {
+    padding: 10px 18px;
+    width: 160px;
+  }
+
+  .help .btn {
+    padding: 12px 18px;
   }
 }
 
