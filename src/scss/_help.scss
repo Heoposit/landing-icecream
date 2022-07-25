@@ -1,0 +1,131 @@
+.section__help {
+    width: 100%;
+    background: $whiteColor;
+}
+
+.help {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    // .help__title
+
+    &__title {
+        margin-top: 191px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 44px;
+        line-height: 52px;
+
+        @media (max-width: $breakpoint1450) {
+            font-size: 42px;
+            line-height: 50px;
+        }
+
+        @media (max-width: $breakpoint992) {
+            font-size: 36px;
+            line-height: 46px;
+        }
+
+        @media (max-width: $breakpoint768) {
+            font-size: 28px;
+            line-height: 42px;
+        }
+ 
+        @media (max-width: $breakpoint480) {
+            font-size: 18px;
+            line-height: 34px;
+            margin-top: 100px;
+        }
+
+        @media (max-width: 335px) {
+            font-size: 14px;
+            line-height: 26px;
+        }
+    }
+
+    &__input {
+
+        &-area {
+            margin-top: 30px;
+            width: 503px;
+            background: #FAFAFA;
+            outline: none;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            padding: 29px 30px;
+            border-radius: 5px;
+
+            @media (max-width: $breakpoint1450) {
+                padding: 26px 44px;
+            }
+
+            @media (max-width: $breakpoint992) {
+                padding: 23px 40px;
+                width: 395px;
+            }
+
+            @media (max-width: $breakpoint768) {
+                width: 260px;
+                padding: 20px 36px;
+            }
+
+            
+            @media (max-width: $breakpoint480) {
+                padding: 12px 22px;
+                width: 200px;
+                font-size: 10px;
+            }
+
+            @media (max-width: 335px) {
+                padding: 10px 18px;
+                width: 160px;
+            }
+        }
+
+        &-btn {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+
+            @media (max-width: $breakpoint768) {
+                font-size: 16px;
+            }
+
+            @media (max-width: $breakpoint480) {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .btn {
+        padding: 28px 46px;
+    
+        @media (max-width: $breakpoint1450) {
+            padding: 26px 44px; 
+        }
+    
+        @media (max-width: $breakpoint992) {
+            padding: 20px 36px;
+        }
+    
+        @media (max-width: $breakpoint768) {
+            padding: 18px 28px;
+        }
+
+        @media (max-width: $breakpoint480) {
+            padding: 14px 22px;
+        }
+
+        @media (max-width: 335px) {
+            padding: 12px 18px;
+        }
+    }
+}
+
+
